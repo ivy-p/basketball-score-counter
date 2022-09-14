@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basketball Score Counter</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+        <!--Pause Icon-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <!--<span class="material-symbols-outlined">
+        pause_circle
+        </span>-->
+
+        <!--Play Icon-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <!--<span class="material-symbols-outlined">
+        play_circle
+        </span>-->
+
+        <!--Timer Icon-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <!--<span class="material-symbols-outlined">
+        timer
+        </span>-->
+    </head>
+
+    <body>
+        <!--TEAM LABELS-->
+        <div class="team-container">
+            <div>
+                <h3>HOME</h3>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+            </div>
+        </div>
+
+        <!--RESPONSIVE SCORE CARDS-->
+        <!--home team-->
+        <div class="score-container">
+            <div class="home-score">
+                <h2 class="home-score-value">0</h2>
+            </div>
+            <!--guest team-->
+            <div class="away-score">
+                <h2 class="away-score-value">0</h2>
+            </div>
+        </div>
+
+        <!--POINT BUTTONS-->
+        <!--home team-->
+        <div class="button-container">
+            <div class="home-buttons">
+                <button class="add-one" onclick="addOne()">+1</button>
+                <button class="add-two" onclick="addTwo()">+2</button>
+                <button class="add-three" onclick="addThree()">+3</button>
+            </div>
+            <!--guest team-->
+            <div class="away-buttons">
+                <button class="away-add-one" onclick="addOneAway()">+1</button>
+                <button class="away-add-two" onclick="addTwoAway()">+2</button>
+                <button class="away-add-three" onclick="addThreeAway()">+3</button>
+            </div>
+        </div>
+
+        <!--TIMER-->
+        <div class="timer-container">
+            
+        </div>
+
+        <!--NEW GAME BUTTON-->
+        <div class="new-game-container">
+            <button class="new-game-button">NEW GAME</button>
+        </div>
+
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>

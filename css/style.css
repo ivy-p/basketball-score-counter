@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B244A;
+}
+
+.team-container,
+.score-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #EEEEEE;
+    margin-top: 68px;
+    margin-bottom: 21px;
+}
+
+.home-score,
+.away-score {
+    width: 155px;
+    height: 120px;
+    background-color: #080001;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #F94F6D;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 85px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.home-buttons,
+.away-buttons {
+    width: 155px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    color: #9AABD8;
+    border: 3px solid #9AABD8;
+    background: none;
+    border-radius: 3px;
+    width: 45px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.timer-container {
+    font-family: 'Verdana';
+    padding: 24px 32px;
+    border-radius: 30px;
+    background: #080001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+    width: 40%;
+}
+
+.timer-part {
+    font-size: 36px;
+    font-weight: bold;
+    color: #F94F6D;
+}
+
+.timer-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background: #8208e6;
+    cursor: pointer;
+}
+
+.timer-btn-start {
+    background-color: #00b84c;
+}
+
+.timer-btn-stop {
+    background-color: #ff0256;
+}
+
+.new-game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.new-game-button {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #eeeeee;
+    background: none;
+    border: 3px solid #9AABD8;
+    border-radius: 3px;
+    padding: 10px;
+}
