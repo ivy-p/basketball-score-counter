@@ -1,9 +1,3 @@
-// TIMER FEATURE
-import Timer from "./timer.js";
-
-new Timer(
-    document.querySelector(".timer-container")
-);
 
 // SCORING
 let homeScore = 0;
@@ -46,11 +40,67 @@ const addThreeAway = function () {
     document.querySelector(".away-score-value").innerText = awayScore;
     console.log(`AWAY add one clicked`);
 };
+
+// TIMER
+
+const stopButton = document.querySelector(".stop-btn");
+const startButton = document.querySelector(".start-btn");
+const resetButton = document.querySelector(".reset-btn");
+
+const startingMinutes = 12;
+// breaking twelve minutes into seconds
+let time = startingMinutes * 60;
+//calling the updateCountDown function every second
+let refreshIntervalId = setInterval(updateCountdown, 1000);
+
+
+function updateCountdown () {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    //adding a second zero for when seconds = 0
+    seconds = seconds < 10 ? '0' + seconds : seconds; 
+    
+    const countdownEl = document.getElementById('countdown');
+    countdownEl.innerHTML = `${minutes}:${seconds}`;
+    
+    
+    time--;
+
+    if (time < 0) {
+        clearInterval(refreshIntervalId);
+    }
+};
+
+stopButton.addEventListener("click", function () {
+    clearInterval(refreshIntervalId);
+});
+
+startButton.addEventListener("click", function () {
+    refreshIntervalId = setInterval(updateCountdown, 1000);
+
+});
+
+resetButton.addEventListener("click", function() {
+    const inputMinutes = 12;
+    clearInterval(refreshIntervalId);
+    time = inputMinutes * 60;
+    updateCountdown();
+});
+
 // NEW GAME BUTTON
+const newGameButton = document.querySelector(".new-game-button");
+
 const newGame = function () {
     awayScore = 0;
     document.querySelector(".away-score-value").innerText = awayScore;
 
     homeScore = 0;
     document.querySelector(".home-score-value").innerText = homeScore;
+
+    const inputMinutes = 12;
+    clearInterval(refreshIntervalId);
+    time = inputMinutes * 60;
+    updateCountdown();
 };
+

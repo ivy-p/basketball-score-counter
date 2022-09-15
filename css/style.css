@@ -73,17 +73,40 @@ h2 {
 
 .timer-container {
     font-family: 'Verdana';
-    padding: 24px 32px;
     border-radius: 30px;
     background: #080001;
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
     margin: 25px auto;
     width: 40%;
+    padding: 15px;
 }
 
-.timer-part {
+#countdown {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    width: 100%;
+}
+
+.stop-btn,
+.start-btn,
+.reset-btn {
+    color: #9AABD8;
+    border: 3px solid #9AABD8;
+    background: none;
+    border-radius: 3px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+/* .timer-part {
     font-size: 36px;
     font-weight: bold;
     color: #F94F6D;
@@ -106,7 +129,7 @@ h2 {
 
 .timer-btn-stop {
     background-color: #ff0256;
-}
+} */
 
 .new-game-container {
     display: flex;
