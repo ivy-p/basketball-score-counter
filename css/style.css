@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 200px 0;
     background-color: #1B244A;
 }
 
@@ -58,6 +58,8 @@ h2 {
     height: 45px;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    align-items: center;
 }
 
 .button-container button {
