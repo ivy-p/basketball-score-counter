@@ -55,6 +55,11 @@ h2 {
     align-items: center;
 }
 
+.button:hover {
+    color: #F94F6D;
+    border: 3px solid #F94F6D;
+}
+
 button {
     color: #9AABD8;
     border: 3px solid #9AABD8;
@@ -102,6 +107,13 @@ button {
     width: auto;
 }
 
+.stop-btn:hover,
+.start-btn:hover,
+.reset-btn:hover {
+    border: 3px solid #F94F6D;
+    color: #F94F6D;
+}
+
 .new-game-container {
     display: flex;
     justify-content: center;
@@ -121,6 +133,11 @@ button {
     border-radius: 3px;
     padding: 10px;
     width: auto;
+}
+
+.new-game-button:hover {
+    color: #F94F6D;
+    border: 3px solid #F94F6D;
 }
 
 @media only screen and (min-width: 400px) {
