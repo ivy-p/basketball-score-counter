@@ -4,10 +4,11 @@ body {
     background-color: #1B244A;
 }
 
-.team-container,
-.score-container {
+.team-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 
 h3 {
@@ -19,7 +20,7 @@ h3 {
     text-align: center;
     color: #EEEEEE;
     margin-top: 68px;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
 }
 
 .home-score,
@@ -31,7 +32,7 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -44,14 +45,6 @@ h2 {
     font-family: 'Orbitron', sans-serif;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-
 .home-buttons,
 .away-buttons {
     width: 155px;
@@ -62,7 +55,7 @@ h2 {
     align-items: center;
 }
 
-.button-container button {
+button {
     color: #9AABD8;
     border: 3px solid #9AABD8;
     background: none;
@@ -78,7 +71,7 @@ h2 {
     border-radius: 30px;
     background: #080001;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     margin: 25px auto;
@@ -106,32 +99,8 @@ h2 {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 15px;
+    width: auto;
 }
-
-/* .timer-part {
-    font-size: 36px;
-    font-weight: bold;
-    color: #F94F6D;
-}
-
-.timer-btn {
-    width: 50px;
-    height: 50px;
-    margin-left: 16px;
-    border-radius: 50px;
-    border: none;
-    color: white;
-    background: #8208e6;
-    cursor: pointer;
-}
-
-.timer-btn-start {
-    background-color: #00b84c;
-}
-
-.timer-btn-stop {
-    background-color: #ff0256;
-} */
 
 .new-game-container {
     display: flex;
@@ -151,4 +120,18 @@ h2 {
     border: 3px solid #9AABD8;
     border-radius: 3px;
     padding: 10px;
+    width: auto;
+}
+
+@media only screen and (min-width: 400px) {
+    .team-container {
+        flex-flow: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .timer-container {
+        flex-flow: row wrap;
+    }
 }

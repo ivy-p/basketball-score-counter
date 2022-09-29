@@ -27,39 +27,27 @@
     <body>
         <!--TEAM LABELS-->
         <div class="team-container">
-            <div>
+            <div class="score-container">
                 <h3>HOME</h3>
-            </div>
-            <div>
+                <div class="home-score">
+                    <h2 class="home-score-value">0</h2>
+                </div>
+                <div class="home-buttons">
+                    <button class="add-one button" onclick="addOne()">+1</button>
+                    <button class="add-two button" onclick="addTwo()">+2</button>
+                    <button class="add-three button" onclick="addThree()">+3</button>
+                </div>
+            </div >
+            <div class="score-container">
                 <h3>GUEST</h3>
-            </div>
-        </div>
-
-        <!--RESPONSIVE SCORE CARDS-->
-        <!--home team-->
-        <div class="score-container">
-            <div class="home-score">
-                <h2 class="home-score-value">0</h2>
-            </div>
-            <!--guest team-->
-            <div class="away-score">
-                <h2 class="away-score-value">0</h2>
-            </div>
-        </div>
-
-        <!--POINT BUTTONS-->
-        <!--home team-->
-        <div class="button-container">
-            <div class="home-buttons">
-                <button class="add-one" onclick="addOne()">+1</button>
-                <button class="add-two" onclick="addTwo()">+2</button>
-                <button class="add-three" onclick="addThree()">+3</button>
-            </div>
-            <!--guest team-->
-            <div class="away-buttons">
-                <button class="away-add-one" onclick="addOneAway()">+1</button>
-                <button class="away-add-two" onclick="addTwoAway()">+2</button>
-                <button class="away-add-three" onclick="addThreeAway()">+3</button>
+                <div class="away-score">
+                    <h2 class="away-score-value">0</h2>
+                </div>
+                <div class="away-buttons">
+                    <button class="away-add-one button" onclick="addOneAway()">+1</button>
+                    <button class="away-add-two button" onclick="addTwoAway()">+2</button>
+                    <button class="away-add-three button" onclick="addThreeAway()">+3</button>
+                </div>
             </div>
         </div>
 
