@@ -64,6 +64,11 @@ h2 {
     border: 3px solid #F94F6D;
 }
 
+button:hover::after {
+    color: #9AABD8;
+    border: 3px solid #9AABD8;
+}
+
 button {
     color: #9AABD8;
     border: 3px solid #9AABD8;
@@ -73,6 +78,7 @@ button {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.125rem;
     line-height: 28px;
+    text-align: center;
 }
 
 .timer-container {
