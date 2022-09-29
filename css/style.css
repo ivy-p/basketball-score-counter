@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
     padding: 0 0 200px 0;
@@ -15,7 +19,7 @@ h3 {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 36px;
     text-align: center;
     color: #EEEEEE;
@@ -40,7 +44,7 @@ h2 {
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 85px;
+    font-size: 5.3125rem;
     line-height: 85px;
     font-family: 'Orbitron', sans-serif;
 }
@@ -67,7 +71,7 @@ button {
     border-radius: 3px;
     width: 45px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
 }
 
@@ -87,7 +91,7 @@ button {
 #countdown {
     color: white;
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
     margin: 0 0 20px 0;
     width: 100%;
@@ -101,7 +105,7 @@ button {
     background: none;
     border-radius: 3px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
     margin-bottom: 15px;
     width: auto;
@@ -126,7 +130,7 @@ button {
     font-family: 'Verdana';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #eeeeee;
     background: none;
     border: 3px solid #9AABD8;
@@ -140,6 +144,21 @@ button {
     border: 3px solid #F94F6D;
 }
 
+.key {
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    margin-top: 75px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.key span {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
 @media only screen and (min-width: 400px) {
     .team-container {
         flex-flow: row;
@@ -150,5 +169,23 @@ button {
 @media only screen and (min-width: 768px) {
     .timer-container {
         flex-flow: row wrap;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    html {
+        font-size: 18px;
+    }
+    .team-container {
+        justify-content: center;
+    }
+
+    .score-container {
+        margin: 20px 50px;
+    }
+    
+    .timer-container {
+        flex-flow: row wrap;
+        width: fit-content;
     }
 }

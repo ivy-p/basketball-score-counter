@@ -70,7 +70,7 @@ function updateCountdown () {
     if (time < 0) {
         clearInterval(refreshIntervalId);
     }
-};
+}
 
 stopButton.addEventListener("click", function () {
     clearInterval(refreshIntervalId);
@@ -103,4 +103,31 @@ const newGame = function () {
     time = inputMinutes * 60;
     updateCountdown();
 };
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "1") {
+        addOne();
+    } else if (e.key === "2") {
+        addTwo();
+    } else if (e.key === "3") {
+        addThree();
+    } else if (e.key ==="8") {
+        addOneAway();
+    } else if (e.key === "9") {
+        addTwoAway();
+    } else if (e.key === "0") {
+        addThreeAway();
+    } else if (e.key === "s") {
+        refreshIntervalId = setInterval(updateCountdown, 1000);
+    } else if (e.key === "t") {
+        clearInterval(refreshIntervalId);t
+    } else if (e.key === "r") {
+        const inputMinutes = 12;
+        clearInterval(refreshIntervalId);
+        time = inputMinutes * 60;
+        updateCountdown();
+    } else if (e.key === "n") {
+        newGame();
+    }
+});
 
