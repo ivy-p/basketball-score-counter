@@ -59,7 +59,12 @@ h2 {
     align-items: center;
 }
 
-.button:hover {
+.home-buttons button,
+.away-buttons button {
+    padding: 6px 8px;
+}
+
+button:hover {
     color: #F94F6D;
     border: 3px solid #F94F6D;
 }
